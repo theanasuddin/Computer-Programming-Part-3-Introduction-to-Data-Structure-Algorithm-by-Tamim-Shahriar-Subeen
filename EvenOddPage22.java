@@ -11,12 +11,12 @@ public class EvenOddPage22 {
 		n = input.nextInt();
 		input.close();
 
-		int[] even = new int[n + 1];
+		boolean[] even = new boolean[n + 1];
 		for (int i = 0; i < even.length; i++) {
-			even[i] = 0;
+			even[i] = false;
 		}
 		for (int i = 0; i < even.length; i += 2) {
-			even[i] = 1;
+			even[i] = true;
 		}
 
 		if (even[n]) {
